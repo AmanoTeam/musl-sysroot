@@ -1,16 +1,16 @@
 #!/bin/bash
 
 declare packages=(
-	'https://web.archive.org/web/0if_/https://alpha.de.repo.voidlinux.org/current/musl/musl-1.1.24_17.armv6l-musl.xbps'
-	'https://web.archive.org/web/0if_/https://alpha.de.repo.voidlinux.org/current/musl/musl-devel-1.1.24_17.armv6l-musl.xbps'
-	'https://web.archive.org/web/0if_/https://alpha.de.repo.voidlinux.org/current/kernel-libc-headers-5.10.4_1.armv6l.xbps'
-	'https://web.archive.org/web/0if_/https://alpha.de.repo.voidlinux.org/current/musl/libexecinfo-devel-1.1_3.armv6l-musl.xbps'
+	'https://repo-default.voidlinux.org/current/musl/musl1.1-1.1.24_8.armv6l-musl.xbps'
+	'https://repo-default.voidlinux.org/current/musl/musl1.1-devel-1.1.24_8.armv6l-musl.xbps'
+	'https://repo-default.voidlinux.org/current/musl/kernel-libc-headers-6.14_1.armv6l-musl.xbps'
+	'https://repo-default.voidlinux.org/current/musl/libexecinfo-devel-1.1_3.armv6l-musl.xbps'
 )
 
 declare triplet='arm-unknown-linux-musleabihf'
 
 declare ld='ld-musl-armhf.so.1'
 
-declare sysroot='https://web.archive.org/web/0if_/https://repo-default.voidlinux.org/live/current/void-armv6l-musl-ROOTFS-20230628.tar.xz'
+declare sysroot='https://repo-default.voidlinux.org/live/current/void-armv6l-musl-ROOTFS-20250202.tar.xz'
 
 declare os='void'

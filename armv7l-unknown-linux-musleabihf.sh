@@ -1,16 +1,15 @@
 #!/bin/bash
 
 declare packages=(
-	'https://web.archive.org/web/0if_/https://alpha.de.repo.voidlinux.org/current/musl/musl-1.1.24_17.armv7l-musl.xbps'
-	'https://web.archive.org/web/0if_/https://alpha.de.repo.voidlinux.org/current/musl/musl-devel-1.1.24_17.armv7l-musl.xbps'
-	'https://web.archive.org/web/0if_/https://alpha.de.repo.voidlinux.org/current/kernel-libc-headers-5.10.4_1.armv7l.xbps'
-	'https://web.archive.org/web/0if_/https://alpha.de.repo.voidlinux.org/current/musl/libexecinfo-devel-1.1_3.armv7l-musl.xbps'
+	'https://dl-3.alpinelinux.org/alpine/edge/main/armv7/musl-1.2.5-r14.apk'
+	'https://dl-3.alpinelinux.org/alpine/edge/main/armv7/musl-dev-1.2.5-r14.apk'
+	'https://dl-3.alpinelinux.org/alpine/edge/main/armv7/linux-headers-6.15.6-r0.apk'
 )
 
 declare triplet='armv7l-unknown-linux-musleabihf'
 
 declare ld='ld-musl-armhf.so.1'
 
-declare sysroot='https://web.archive.org/web/0if_/https://repo-default.voidlinux.org/live/current/void-armv7l-musl-ROOTFS-20230628.tar.xz'
+declare sysroot='https://dl-cdn.alpinelinux.org/alpine/edge/releases/armv7/alpine-minirootfs-3.22.0-armv7.tar.gz'
 
-declare os='void'
+declare os='alpine'

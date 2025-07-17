@@ -19,11 +19,12 @@ declare -ra targets=(
 	'riscv64-unknown-linux-musl'
 	's390x-unknown-linux-musl'
 	'i386-unknown-linux-musl'
+	'loongarch64-unknown-linux-musl'
 )
 
 for target in "${targets[@]}"; do
 	source "${workdir}/${target}.sh"
-	echo $packages
+	
 	declare tmp="$(mktemp --directory)"
 	
 	cd "${tmp}"
