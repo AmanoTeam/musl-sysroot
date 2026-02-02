@@ -7,19 +7,11 @@ declare -r workdir="${PWD}"
 declare -r sysroot_directory='/tmp'
 
 declare -ra targets=(
-	'mipsel-unknown-linux-musl'
-	'mips-unknown-linux-musl'
-	'powerpc-unknown-linux-musl'
-	'mips64-unknown-linux-musl'
-	'armv7l-unknown-linux-musleabihf'
-	'powerpc64le-unknown-linux-musl'
-	'x86_64-unknown-linux-musl'
-	'aarch64-unknown-linux-musl'
-	'arm-unknown-linux-musleabihf'
-	'riscv64-unknown-linux-musl'
-	's390x-unknown-linux-musl'
 	'i386-unknown-linux-musl'
-	'loongarch64-unknown-linux-musl'
+	'x86_64-unknown-linux-musl'
+	'armv6-unknown-linux-musleabihf'
+	'armv7-unknown-linux-musleabihf'
+	'aarch64-unknown-linux-musl'
 )
 
 for target in "${targets[@]}"; do
